@@ -30,10 +30,6 @@ for file in glob.iglob(f'{dn}\\*.jpg'):
     else:
         print(f"Failed to read file: {file}")  # Print if a file cannot be read
 
-nt
-tumor
-
-
 
 all = nt + tumor
 data = np.array([item[0] for item in all])
@@ -68,11 +64,6 @@ data_augmentation = ImageDataGenerator(
 
 # Assuming X_train and y_train are your training data and labels, respectively
 train_generator = data_augmentation.flow(X_train, y_train, batch_size=4)
-
-
-
-
-    
 
 batch_size = 5
 img_height = 180
